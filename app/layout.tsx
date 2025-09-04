@@ -1,5 +1,11 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import {
+  Geist,
+  Geist_Mono,
+  Lora,
+  Montserrat,
+  Sour_Gummy,
+} from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 
@@ -10,6 +16,19 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: '--font-geist-mono',
+  subsets: ['latin'],
+});
+const lora = Lora({
+  variable: '--font-lora',
+  subsets: ['latin'],
+});
+const sourGummy = Sour_Gummy({
+  variable: '--font-sourGummy',
+  subsets: ['latin'],
+});
+
+const montserrat = Montserrat({
+  variable: '--font-montserrat',
   subsets: ['latin'],
 });
 
@@ -26,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${lora.variable} ${sourGummy.variable} ${montserrat.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider
           attribute='class'
