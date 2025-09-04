@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import {
   Geist,
   Geist_Mono,
+  Inter,
   Lora,
   Montserrat,
   Sour_Gummy,
@@ -26,9 +27,12 @@ const sourGummy = Sour_Gummy({
   variable: '--font-sourGummy',
   subsets: ['latin'],
 });
-
 const montserrat = Montserrat({
   variable: '--font-montserrat',
+  subsets: ['latin'],
+});
+const inter = Inter({
+  variable: '--font-inter',
   subsets: ['latin'],
 });
 
@@ -45,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body
-        className={`${lora.variable} ${sourGummy.variable} ${montserrat.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${lora.variable} ${sourGummy.variable} ${montserrat.variable} ${inter.variable} ${geistSans.variable} ${geistMono.variable} font-metropolis antialiased`}
       >
         <ThemeProvider
           attribute='class'

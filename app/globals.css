@@ -1,6 +1,19 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
+@import '@fontsource/metropolis/100.css';
+@import '@fontsource/metropolis/200.css';
+@import '@fontsource/metropolis/300.css';
+@import '@fontsource/metropolis/400.css';
+@import '@fontsource/metropolis/500.css';
+@import '@fontsource/metropolis/600.css';
+@import '@fontsource/metropolis/700.css';
+@import '@fontsource/metropolis/800.css';
+@import '@fontsource/metropolis/900.css';
+
+@import '@fontsource/metropolis/400-italic.css';
+@import '@fontsource/metropolis/700-italic.css';
+
 @custom-variant dark (&:is(.dark *));
 
 @theme {
@@ -39,6 +52,7 @@
   --font-lora: 'Lora', serif;
   --font-sourGummy: 'Sour Gummy', cursive;
   --font-montserrat: 'Montserrat', sans-serif;
+  --font-inter: 'Inter', sans-serif;
 
   /* Font Sizes */
 
@@ -150,6 +164,8 @@
   --font-mono: var(--font-geist-mono);
   --font-lora: var(--font-lora);
   --font-sourGummy: var(--font-sourGummy);
+  --font-inter: var(--font-inter);
+  --font-montserrat: var(--font-montserrat);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -259,8 +275,10 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground font-lora;
+    @apply bg-background text-foreground;
+    font-family: 'Metropolis', sans-serif;
   }
+
   p {
     @apply font-montserrat;
   }
