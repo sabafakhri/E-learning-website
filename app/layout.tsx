@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 import {
   Geist,
   Geist_Mono,
@@ -6,136 +6,136 @@ import {
   Lora,
   Montserrat,
   Sour_Gummy,
-} from 'next/font/google';
-import localFont from 'next/font/local';
-import './globals.css';
-import { ThemeProvider } from '@/components/theme-provider';
+} from "next/font/google";
+import localFont from "next/font/local";
+import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const lora = Lora({
-  variable: '--font-lora',
-  subsets: ['latin'],
+  variable: "--font-lora",
+  subsets: ["latin"],
 });
 const sourGummy = Sour_Gummy({
-  variable: '--font-sourGummy',
-  subsets: ['latin'],
+  variable: "--font-sourGummy",
+  subsets: ["latin"],
 });
 const montserrat = Montserrat({
-  variable: '--font-montserrat',
-  subsets: ['latin'],
+  variable: "--font-montserrat",
+  subsets: ["latin"],
 });
 const inter = Inter({
-  variable: '--font-inter',
-  subsets: ['latin'],
+  variable: "--font-inter",
+  subsets: ["latin"],
 });
 
 const metropolis = localFont({
   src: [
     {
-      path: './fonts/Metropolis/Metropolis-Thin.otf',
-      weight: '100',
-      style: 'normal',
+      path: "./fonts/Metropolis/Metropolis-Thin.otf",
+      weight: "100",
+      style: "normal",
     },
     {
-      path: './fonts/Metropolis/Metropolis-ThinItalic.otf',
-      weight: '100',
-      style: 'italic',
-    },
-
-    {
-      path: './fonts/Metropolis/Metropolis-ExtraLight.otf',
-      weight: '200',
-      style: 'normal',
-    },
-    {
-      path: './fonts/Metropolis/Metropolis-ExtraLightItalic.otf',
-      weight: '200',
-      style: 'italic',
+      path: "./fonts/Metropolis/Metropolis-ThinItalic.otf",
+      weight: "100",
+      style: "italic",
     },
 
     {
-      path: './fonts/Metropolis/Metropolis-Light.otf',
-      weight: '300',
-      style: 'normal',
+      path: "./fonts/Metropolis/Metropolis-ExtraLight.otf",
+      weight: "200",
+      style: "normal",
     },
     {
-      path: './fonts/Metropolis/Metropolis-LightItalic.otf',
-      weight: '300',
-      style: 'italic',
-    },
-
-    {
-      path: './fonts/Metropolis/Metropolis-Regular.otf',
-      weight: '400',
-      style: 'normal',
-    },
-    {
-      path: './fonts/Metropolis/Metropolis-RegularItalic.otf',
-      weight: '400',
-      style: 'italic',
+      path: "./fonts/Metropolis/Metropolis-ExtraLightItalic.otf",
+      weight: "200",
+      style: "italic",
     },
 
     {
-      path: './fonts/Metropolis/Metropolis-Medium.otf',
-      weight: '500',
-      style: 'normal',
+      path: "./fonts/Metropolis/Metropolis-Light.otf",
+      weight: "300",
+      style: "normal",
     },
     {
-      path: './fonts/Metropolis/Metropolis-MediumItalic.otf',
-      weight: '500',
-      style: 'italic',
-    },
-
-    {
-      path: './fonts/Metropolis/Metropolis-SemiBold.otf',
-      weight: '600',
-      style: 'normal',
-    },
-    {
-      path: './fonts/Metropolis/Metropolis-SemiBoldItalic.otf',
-      weight: '600',
-      style: 'italic',
+      path: "./fonts/Metropolis/Metropolis-LightItalic.otf",
+      weight: "300",
+      style: "italic",
     },
 
     {
-      path: './fonts/Metropolis/Metropolis-Bold.otf',
-      weight: '700',
-      style: 'normal',
+      path: "./fonts/Metropolis/Metropolis-Regular.otf",
+      weight: "400",
+      style: "normal",
     },
     {
-      path: './fonts/Metropolis/Metropolis-BoldItalic.otf',
-      weight: '700',
-      style: 'italic',
-    },
-
-    {
-      path: './fonts/Metropolis/Metropolis-ExtraBold.otf',
-      weight: '800',
-      style: 'normal',
-    },
-    {
-      path: './fonts/Metropolis/Metropolis-ExtraBoldItalic.otf',
-      weight: '800',
-      style: 'italic',
+      path: "./fonts/Metropolis/Metropolis-RegularItalic.otf",
+      weight: "400",
+      style: "italic",
     },
 
     {
-      path: './fonts/Metropolis/Metropolis-Black.otf',
-      weight: '900',
-      style: 'normal',
+      path: "./fonts/Metropolis/Metropolis-Medium.otf",
+      weight: "500",
+      style: "normal",
     },
     {
-      path: './fonts/Metropolis/Metropolis-BlackItalic.otf',
-      weight: '900',
-      style: 'italic',
+      path: "./fonts/Metropolis/Metropolis-MediumItalic.otf",
+      weight: "500",
+      style: "italic",
+    },
+
+    {
+      path: "./fonts/Metropolis/Metropolis-SemiBold.otf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Metropolis/Metropolis-SemiBoldItalic.otf",
+      weight: "600",
+      style: "italic",
+    },
+
+    {
+      path: "./fonts/Metropolis/Metropolis-Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Metropolis/Metropolis-BoldItalic.otf",
+      weight: "700",
+      style: "italic",
+    },
+
+    {
+      path: "./fonts/Metropolis/Metropolis-ExtraBold.otf",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Metropolis/Metropolis-ExtraBoldItalic.otf",
+      weight: "800",
+      style: "italic",
+    },
+
+    {
+      path: "./fonts/Metropolis/Metropolis-Black.otf",
+      weight: "900",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Metropolis/Metropolis-BlackItalic.otf",
+      weight: "900",
+      style: "italic",
     },
   ],
-  variable: '--font-metropolis',
-  display: 'swap',
+  variable: "--font-metropolis",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: 'Create Next App',
-  description: 'Generated by create next app',
+  title: "Create Next App",
+  description: "Generated by create next app",
 };
 
 export default function RootLayout({
@@ -144,13 +144,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en' suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${metropolis.variable} ${lora.variable} ${sourGummy.variable} ${montserrat.variable} ${inter.variable} antialiased`}
       >
         <ThemeProvider
-          attribute='class'
-          defaultTheme='system'
+          attribute="class"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
