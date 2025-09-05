@@ -149,10 +149,11 @@
   --text-16: 16px;
   --text-16--line-height: 30px;
 
+  --text-28: 28px;
+  --text-28--line-height: 32px;
+
   --text-45: 45px;
   --text-45--line-height: 55px;
-  --text-45--tracking: 0%;
-  --text-45--font-weight: 700;
 }
 
 @theme inline {

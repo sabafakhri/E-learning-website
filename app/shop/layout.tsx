@@ -5,7 +5,7 @@ import React from "react";
 export default function layout() {
   return (
     <div>
-      <section className="m-auto max-w-[1280px]">
+      <section className="mx-5 max-w-[1280px] rounded-[10px] sm:m-auto">
         <Subscribe />
       </section>
       <footer className="row-start-3 flex flex-wrap items-center justify-center gap-[24px]">
