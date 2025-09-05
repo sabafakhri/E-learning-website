@@ -4,8 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  /* color */
-
+  /* colors */
   /* Purple */
   --color-purple-900: #9c4df4;
   --color-purple-800: #954ae9;
@@ -35,125 +34,29 @@
   --color-gray-600: #5d5a6f;
   --color-gray-300: #dedde4;
 
+  /* Fonts and Font Sizes */
   --font-metropolis: "Metropolis", sans-serif;
-  /* Font Sizes */
 
-  /* Display 1 */
-  --text-display-1: 45px;
-  --text-display-1--line-height: 50px;
-  --text-display-1--font-weight: 700;
+  --text-45-55: 45px;
+  --text-45-55--line-height: 55px;
 
-  /* Display 2 */
-  --text-display-2: 35px;
-  --text-display-2--line-height: 40px;
-  --text-display-2--font-weight: 700;
+  --text-35-40: 35px;
+  --text-35-40--line-height: 40px;
 
-  /* Display 3 */
-  --text-display-3: 30px;
-  --text-display-3--line-height: 35px;
-  --text-display-3--font-weight: 700;
+  --text-28-32: 28px;
+  --text-28-32--line-height: 32px;
 
-  /* Display 4 */
-  --text-display-4: 30px;
-  --text-display-4--line-height: 35px;
-  --text-display-4--font-weight: 600;
+  --text-16-30: 16px;
+  --text-16-30--line-height: 30px;
 
-  /* Display 5 */
-  --text-display-5: 25px;
-  --text-display-5--line-height: 30px;
-  --text-display-5--font-weight: 700;
+  --text-16-24: 16px;
+  --text-16-24--line-height: 24px;
 
-  /* Display 6 */
-  --text-display-6: 25px;
-  --text-display-6--line-height: 30px;
-  --text-display-6--font-weight: 600;
+  --text-14-30: 14px;
+  --text-14-30--line-height: 30px;
 
-  /* Display 7 */
-  --text-display-7: 20px;
-  --text-display-7--line-height: 30px;
-  --text-display-7--font-weight: 700;
-
-  /* Display 8 */
-  --text-display-8: 20px;
-  --text-display-8--line-height: 30px;
-  --text-display-8--font-weight: 600;
-
-  /* Display 9 */
-  --text-display-9: 20px;
-  --text-display-9--line-height: 30px;
-  --text-display-9--font-weight: 500;
-
-  /* Display 10 */
-  --text-display-10: 18px;
-  --text-display-10--line-height: 20px;
-  --text-display-10--font-weight: 700;
-
-  /* Display 11 */
-  --text-display-11: 18px;
-  --text-display-11--line-height: 20px;
-  --text-display-11--font-weight: 600;
-
-  /* Display 12 */
-  --text-display-12: 16px;
-  --text-display-12--line-height: 30px;
-  --text-display-12--font-weight: 400;
-
-  /* Display 13 */
-  --text-display-13: 16px;
-  --text-display-13--line-height: 30px;
-  --text-display-13--font-weight: 500;
-
-  /* Display 14 */
-  --text-display-14: 16px;
-  --text-display-14--line-height: 20px;
-  --text-display-14--font-weight: 500;
-
-  /* Display 15 */
-  --text-display-15: 16px;
-  --text-display-15--line-height: 20px;
-  --text-display-15--font-weight: 600;
-
-  /* Display 16 */
-  --text-display-16: 14px;
-  --text-display-16--line-height: 28px;
-  --text-display-16--font-weight: 400;
-
-  /* Display 17 */
-  --text-display-17: 14px;
-  --text-display-17--line-height: 30px;
-  --text-display-17--font-weight: 500;
-
-  /* Display 18 */
-  --text-display-18: 14px;
-  --text-display-18--line-height: 30px;
-  --text-display-18---font-weight: 400;
-
-  /* Display 19 */
-  --text-display-19: 14px;
-  --text-display-19--line-height: 20px;
-  --text-display-19--font-weight: 500;
-
-  /* Display 20 */
-  --text-display-20: 14px;
-  --text-display-20--line-height: 30px;
-  --text-display-20--font-weight: 400;
-
-  --text-inter-22: 22px;
-  --text-inter-22--line-height: 100%;
-  --text-inter-22--font-weight: 600;
-
-  --text-inter-16: 16px;
-  --text-inter-16--line-height: 100%;
-  --text-inter-16--font-weight: 500;
-
-  --text-16: 16px;
-  --text-16--line-height: 30px;
-
-  --text-28: 28px;
-  --text-28--line-height: 32px;
-
-  --text-45: 45px;
-  --text-45--line-height: 55px;
+  --text-14-28: 14px;
+  --text-14-28--line-height: 28px;
 }
 
 @theme inline {
