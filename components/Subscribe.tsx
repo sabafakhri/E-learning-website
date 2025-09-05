@@ -8,12 +8,12 @@ export default function Subscribe() {
         Subscribe For Get Update <br /> Every New Courses
       </h2>
       <div>
-        <p className="text-16 font-metropolis text-background/70 mb-10">
+        <p className="text-16 font-metropolis text-background/70 mb-10 font-normal">
           20k+ students daily learn with Eduvi. Subscribe for new courses.
         </p>
         <div className="focus-within:ring-ring/50 focus-within:ring-offset-background flex rounded-[10px] transition-shadow focus-within:ring-[3px]">
           <Input
-            className="peer text-inter-16 placeholder:text-background dark:placeholder:text-foreground h-15 rounded-[10px] rounded-r-none border-none bg-white/20 focus-visible:border-none focus-visible:ring-0"
+            className="peer text-16 placeholder:text-background dark:placeholder:text-foreground font-metropolis h-15 rounded-[10px] rounded-r-none border-none bg-white/20 font-medium focus-visible:border-none focus-visible:ring-0"
             placeholder="enter your email"
           ></Input>
           <Button size="subscribe" variant="rightsideborder">
