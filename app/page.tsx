@@ -13,7 +13,7 @@ export default function Home() {
           priority
         />
         <ol className="list-inside list-decimal text-center text-sm/6 sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
+          <li className="inter mb-2 tracking-[-.01em]">
             Get started by editing{" "}
             <code className="rounded bg-black/[.05] px-1 py-0.5 font-semibold dark:bg-white/[.06]">
               app/page.tsx

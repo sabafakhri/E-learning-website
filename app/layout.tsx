@@ -1,12 +1,5 @@
 import type { Metadata } from "next";
-import {
-  Geist,
-  Geist_Mono,
-  Inter,
-  Lora,
-  Montserrat,
-  Sour_Gummy,
-} from "next/font/google";
+import { Inter, Lora, Montserrat, Sour_Gummy } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -28,7 +21,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const metropolis = localFont({
+const metro = localFont({
   src: [
     {
       path: "./fonts/Metropolis/Metropolis-Thin.otf",
@@ -146,7 +139,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${metropolis.variable} ${lora.variable} ${sourGummy.variable} ${montserrat.variable} ${inter.variable} antialiased`}
+        className={`${metro.variable} ${lora.variable} ${sourGummy.variable} ${montserrat.variable} ${inter.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"

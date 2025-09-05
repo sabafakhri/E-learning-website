@@ -38,104 +38,104 @@
   /* Font Sizes */
 
   /* Display 1 */
-  --text-display-1-size: 45px;
-  --text-display-1-line-height: 50px;
-  --text-display-1-weight: 700;
+  --text-display-1: 45px;
+  --text-display-1--line-height: 50px;
+  --text-display-1--font-weight: 700;
 
   /* Display 2 */
-  --text-display-2-size: 35px;
-  --text-display-2-line-height: 40px;
-  --text-display-2-weight: 700;
+  --text-display-2: 35px;
+  --text-display-2--line-height: 40px;
+  --text-display-2--font-weight: 700;
 
   /* Display 3 */
-  --text-display-3-size: 30px;
-  --text-display-3-line-height: 35px;
-  --text-display-3-weight: 700;
+  --text-display-3: 30px;
+  --text-display-3--line-height: 35px;
+  --text-display-3--font-weight: 700;
 
   /* Display 4 */
-  --text-display-4-size: 30px;
-  --text-display-4-line-height: 35px;
-  --text-display-4-weight: 600;
+  --text-display-4: 30px;
+  --text-display-4--line-height: 35px;
+  --text-display-4--font-weight: 600;
 
   /* Display 5 */
-  --text-display-5-size: 25px;
-  --text-display-5-line-height: 30px;
-  --text-display-5-weight: 700;
+  --text-display-5: 25px;
+  --text-display-5--line-height: 30px;
+  --text-display-5--font-weight: 700;
 
   /* Display 6 */
-  --text-display-6-size: 25px;
-  --text-display-6-line-height: 30px;
-  --text-display-6-weight: 600;
+  --text-display-6: 25px;
+  --text-display-6--line-height: 30px;
+  --text-display-6--font-weight: 600;
 
   /* Display 7 */
-  --text-display-7-size: 20px;
-  --text-display-7-line-height: 30px;
-  --text-display-7-weight: 700;
+  --text-display-7: 20px;
+  --text-display-7--line-height: 30px;
+  --text-display-7--font-weight: 700;
 
   /* Display 8 */
-  --text-display-8-size: 20px;
-  --text-display-8-line-height: 30px;
-  --text-display-8-weight: 600;
+  --text-display-8: 20px;
+  --text-display-8--line-height: 30px;
+  --text-display-8--font-weight: 600;
 
   /* Display 9 */
-  --text-display-9-size: 20px;
-  --text-display-9-line-height: 30px;
-  --text-display-9-weight: 500;
+  --text-display-9: 20px;
+  --text-display-9--line-height: 30px;
+  --text-display-9--font-weight: 500;
 
   /* Display 10 */
-  --text-display-10-size: 18px;
-  --text-display-10-line-height: 20px;
-  --text-display-10-weight: 700;
+  --text-display-10: 18px;
+  --text-display-10--line-height: 20px;
+  --text-display-10--font-weight: 700;
 
   /* Display 11 */
-  --text-display-11-size: 18px;
-  --text-display-11-line-height: 20px;
-  --text-display-11-weight: 600;
+  --text-display-11: 18px;
+  --text-display-11--line-height: 20px;
+  --text-display-11--font-weight: 600;
 
   /* Display 12 */
-  --text-display-12-size: 16px;
-  --text-display-12-line-height: 30px;
-  --text-display-12-weight: 400;
+  --text-display-12: 16px;
+  --text-display-12--line-height: 30px;
+  --text-display-12--font-weight: 400;
 
   /* Display 13 */
-  --text-display-13-size: 16px;
-  --text-display-13-line-height: 30px;
-  --text-display-13-weight: 500;
+  --text-display-13: 16px;
+  --text-display-13--line-height: 30px;
+  --text-display-13--font-weight: 500;
 
   /* Display 14 */
-  --text-display-14-size: 16px;
-  --text-display-14-line-height: 20px;
-  --text-display-14-weight: 500;
+  --text-display-14: 16px;
+  --text-display-14--line-height: 20px;
+  --text-display-14--font-weight: 500;
 
   /* Display 15 */
-  --text-display-15-size: 16px;
-  --text-display-15-line-height: 20px;
-  --text-display-15-weight: 600;
+  --text-display-15: 16px;
+  --text-display-15--line-height: 20px;
+  --text-display-15--font-weight: 600;
 
   /* Display 16 */
-  --text-display-16-size: 14px;
-  --text-display-16-line-height: 28px;
-  --text-display-16-weight: 400;
+  --text-display-16: 14px;
+  --text-display-16--line-height: 28px;
+  --text-display-16--font-weight: 400;
 
   /* Display 17 */
-  --text-display-17-size: 14px;
-  --text-display-17-line-height: 30px;
-  --text-display-17-weight: 500;
+  --text-display-17: 14px;
+  --text-display-17--line-height: 30px;
+  --text-display-17--font-weight: 500;
 
   /* Display 18 */
-  --text-display-18-size: 14px;
-  --text-display-18-line-height: 30px;
-  --text-display-18-weight: 400;
+  --text-display-18: 14px;
+  --text-display-18--line-height: 30px;
+  --text-display-18---font-weight: 400;
 
   /* Display 19 */
-  --text-display-19-size: 14px;
-  --text-display-19-line-height: 20px;
-  --text-display-19-weight: 500;
+  --text-display-19: 14px;
+  --text-display-19--line-height: 20px;
+  --text-display-19--font-weight: 500;
 
   /* Display 20 */
-  --text-display-20-size: 14px;
-  --text-display-20-line-height: 30px;
-  --text-display-20-weight: 400;
+  --text-display-20: 14px;
+  --text-display-20--line-height: 30px;
+  --text-display-20--font-weight: 400;
 }
 
 @theme inline {
@@ -256,10 +256,10 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground font-inter;
+    @apply bg-background text-foreground font-sourGummy;
   }
 
-  p {
-    @apply font-montserrat;
+  .inter {
+    @apply font-inter text-display-15;
   }
 }
