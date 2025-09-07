@@ -2,9 +2,10 @@ import Subscribe from "@/components/Subscribe";
 import Image from "next/image";
 import React from "react";
 
-export default function layout() {
+export default function layout({ children }: { children: React.ReactNode }) {
   return (
     <div>
+      <main>{children}</main>
       <section className="m-auto max-w-[1280px] rounded-[10px] px-5">
         <Subscribe />
       </section>
