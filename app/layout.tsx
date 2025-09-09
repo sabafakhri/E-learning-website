@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Lora, Montserrat, Sour_Gummy } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "@/components/Footer";
 
 const lora = Lora({
   variable: "--font-lora",
@@ -42,6 +43,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

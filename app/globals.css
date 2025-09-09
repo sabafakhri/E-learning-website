@@ -52,11 +52,17 @@
   --text-16-24: 16px;
   --text-16-24--line-height: 24px;
 
+  --text-16-26: 16px;
+  --text-16-26--line-height: 26px;
+
   --text-14-30: 14px;
   --text-14-30--line-height: 30px;
 
   --text-14-28: 14px;
   --text-14-28--line-height: 28px;
+
+  --text-14-26: 14px;
+  --text-14-26--line-height: 26px;
 }
 
 @theme inline {
