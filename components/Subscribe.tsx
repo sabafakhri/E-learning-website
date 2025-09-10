@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 
 export default function Subscribe() {
   return (
-    <div className="text-background dark:text-foreground font-metropolis flex flex-col items-center justify-center gap-3.75 bg-gray-900 px-5 py-10 text-center sm:h-105 sm:gap-5">
+    <div className="text-background dark:text-foreground font-metropolis m-auto flex max-w-[1280px] flex-col items-center justify-center gap-3.75 bg-gray-900 px-5 py-10 text-center sm:h-105 sm:gap-5">
       <h2 className="text-45-55 font-bold max-sm:hidden">
         Subscribe For Get Update <br /> Every New Courses
       </h2>
@@ -22,7 +22,7 @@ export default function Subscribe() {
           <Button
             size="subscribe"
             variant="subscribe"
-            className="lg:font-inter text-14-30 lg:text-16-30"
+            className="text-14-30 lg:text-16-30"
           >
             Subscribe
           </Button>

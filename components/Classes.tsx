@@ -1,41 +1,37 @@
 import Image from "next/image";
+import { Button } from "./ui/button";
 
 export default function Classes() {
   return (
     <section>
-      <div className="font-metropolis flex flex-col items-center justify-center gap-3.75 px-5 py-10 text-center sm:gap-5">
+      <div className="flex flex-col items-center justify-center gap-3.75 px-5 py-10 text-center sm:gap-5">
         <h2 className="text-45-55 font-bold max-sm:hidden">
-          High quality video, audio & live classes
+          High quality video, <br /> audio & live classes
         </h2>
         <h2 className="text-28-32 sm:text-35-40 font-bold sm:hidden">
           High quality video, audio & live classes
         </h2>
-        <div>
-          <Image
-            className="w-[335px] object-cover"
-            src="/Classes.svg"
+        <p className="text-16-24 lg:text-16-30 mb-7.5 max-w-210 font-normal text-gray-600 sm:mb-10">
+          High-definition video is video of higher resolution and quality than
+          standard-definition. While there is no standardized meaning for
+          high-definition, generally any video image with considerably more than
+          480 vertical scan lines or 576 vertical lines is considered
+          high-definition.
+        </p>
+        <Button size="classes" variant="classes">
+          Visit Courses
+        </Button>
+      </div>
+      <div className="m-auto sm:max-w-216 lg:max-w-265">
+        <div className="bg-[url(/pexels-vanessa-garcia-6325959 1.svg)] mask-[url(/next.svg)]">
+          {/* <Image
+            className="border-7.5 w-full rounded-[20px] border-white"
+            src="/pexels-vanessa-garcia-6325959 1.svg"
             alt="Next.js logo"
-            width={335}
-            height={250}
+            width={1000}
+            height={570}
             priority
-          />
-
-          <p className="text-16-24 lg:text-14-28 text-background/70 dark:text-foreground/70 mb-7.5 font-normal sm:mb-10">
-            20k+ students daily learn with Eduvi. Subscribe for new courses.
-          </p>
-          <div className="sm:focus-within:ring-ring/50 sm:focus-within:ring-offset-background mx-2.5 flex transition-all duration-300 max-sm:flex-col max-sm:gap-5 sm:focus-within:ring-[3px] lg:rounded-[10px]">
-            <input
-              className="peer text-14-30 lg:text-16-30 placeholder:text-background dark:placeholder:text-foreground h-12.5 rounded-[5px] border-none bg-white/20 font-medium sm:rounded-r-none sm:focus-visible:border-none sm:focus-visible:ring-0 lg:h-15 lg:rounded-l-[10px]"
-              placeholder="enter your email"
-            ></input>
-            <button
-              // size="subscribe"
-              // variant="subscribe"
-              className="lg:font-inter text-14-30 lg:text-16-30"
-            >
-              Subscribe
-            </button>
-          </div>
+          /> */}
         </div>
       </div>
       <div className="m-auto grid grid-cols-2 gap-3.75 sm:max-w-216 sm:grid-cols-3 sm:gap-5.5 lg:max-w-265 lg:gap-7.5">
