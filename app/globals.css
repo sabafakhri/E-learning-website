@@ -4,8 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  /* color */
-
+  /* colors */
   /* Purple */
   --color-purple-900: #9c4df4;
   --color-purple-800: #954ae9;
@@ -35,128 +34,33 @@
   --color-gray-600: #5d5a6f;
   --color-gray-300: #dedde4;
 
-  /* Font Sizes */
-
-  /* Display 1 */
-  --text-display-1: 45px;
-  --text-display-1--line-height: 50px;
-  --text-display-1--font-weight: 700;
-
-  /* Display 2 */
-  --text-display-2: 35px;
-  --text-display-2--line-height: 40px;
-  --text-display-2--font-weight: 700;
-
-  /* Display 3 */
-  --text-display-3: 30px;
-  --text-display-3--line-height: 35px;
-  --text-display-3--font-weight: 700;
-
-  /* Display 4 */
-  --text-display-4: 30px;
-  --text-display-4--line-height: 35px;
-  --text-display-4--font-weight: 600;
-
-  /* Display 5 */
-  --text-display-5: 25px;
-  --text-display-5--line-height: 30px;
-  --text-display-5--font-weight: 700;
-
-  /* Display 6 */
-  --text-display-6: 25px;
-  --text-display-6--line-height: 30px;
-  --text-display-6--font-weight: 600;
-
-  /* Display 7 */
-  --text-display-7: 20px;
-  --text-display-7--line-height: 30px;
-  --text-display-7--font-weight: 700;
-
-  /* Display 8 */
-  --text-display-8: 20px;
-  --text-display-8--line-height: 30px;
-  --text-display-8--font-weight: 600;
-
-  /* Display 9 */
-  --text-display-9: 20px;
-  --text-display-9--line-height: 30px;
-  --text-display-9--font-weight: 500;
-
-  /* Display 10 */
-  --text-display-10: 18px;
-  --text-display-10--line-height: 20px;
-  --text-display-10--font-weight: 700;
-
-  /* Display 11 */
-  --text-display-11: 18px;
-  --text-display-11--line-height: 20px;
-  --text-display-11--font-weight: 600;
-
-  /* Display 12 */
-  --text-display-12: 16px;
-  --text-display-12--line-height: 30px;
-  --text-display-12--font-weight: 400;
-
-  /* Display 13 */
-  --text-display-13: 16px;
-  --text-display-13--line-height: 30px;
-  --text-display-13--font-weight: 500;
-
-  /* Display 14 */
-  --text-display-14: 16px;
-  --text-display-14--line-height: 20px;
-  --text-display-14--font-weight: 500;
-
-  /* Display 15 */
-  --text-display-15: 16px;
-  --text-display-15--line-height: 20px;
-  --text-display-15--font-weight: 600;
-
-  /* Display 16 */
-  --text-display-16: 14px;
-  --text-display-16--line-height: 28px;
-  --text-display-16--font-weight: 400;
-
-  /* Display 17 */
-  --text-display-17: 14px;
-  --text-display-17--line-height: 30px;
-  --text-display-17--font-weight: 500;
-
-  /* Display 18 */
-  --text-display-18: 14px;
-  --text-display-18--line-height: 30px;
-  --text-display-18---font-weight: 400;
-
-  /* Display 19 */
-  --text-display-19: 14px;
-  --text-display-19--line-height: 20px;
-  --text-display-19--font-weight: 500;
-
-  /* Display 20 */
-  --text-display-20: 14px;
-  --text-display-20--line-height: 30px;
-  --text-display-20--font-weight: 400;
-
-  --text-28-32: 28px;
-  --text-28-32--line-height: 32px;
-
-  --text-16-24: 16px;
-  --text-16-24--line-height: 24px;
-
-  --text-14-20: 14px;
-  --text-14-20--line-height: 20px;
-
-  --text-35-40: 35px;
-  --text-35-40--line-height: 40px;
-
-  --text-14-28: 14px;
-  --text-14-28--line-height: 28px;
+  /* Fonts and Font Sizes */
+  --font-metropolis: "Metropolis", sans-serif;
 
   --text-45-55: 45px;
   --text-45-55--line-height: 55px;
 
+  --text-35-40: 35px;
+  --text-35-40--line-height: 40px;
+
+  --text-28-32: 28px;
+  --text-28-32--line-height: 32px;
+
   --text-16-30: 16px;
   --text-16-30--line-height: 30px;
+
+  --text-16-24: 16px;
+  --text-16-24--line-height: 24px;
+
+  --text-14-30: 14px;
+  --text-14-30--line-height: 30px;
+
+  --text-14-20: 14px;
+  --text-14-20--line-height: 20px;
+
+  --text-14-28: 14px;
+  --text-14-28--line-height: 28px;
+
 }
 
 @theme inline {
@@ -278,10 +182,102 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground font-metropolis;
+
+    @apply bg-background text-foreground;
+
   }
 
-  .inter {
-    @apply font-inter text-display-15;
+  Button {
+    @apply font-inter;
   }
+}
+
+/* metropolis-latin-100-normal */
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100;
+  src: url(@fontsource/metropolis/files/metropolis-latin-100-normal.woff2)
+    format("woff2");
+}
+
+/* metropolis-latin-200-normal */
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 200;
+  src: url(@fontsource/metropolis/files/metropolis-latin-200-normal.woff2)
+    format("woff2");
+}
+
+/* metropolis-latin-300-normal */
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url(@fontsource/metropolis/files/metropolis-latin-300-normal.woff2)
+    format("woff2");
+}
+
+/* metropolis-latin-400-normal */
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(@fontsource/metropolis/files/metropolis-latin-400-normal.woff2)
+    format("woff2");
+}
+
+/* metropolis-latin-500-normal */
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url(@fontsource/metropolis/files/metropolis-latin-500-normal.woff2)
+    format("woff2");
+}
+
+/* metropolis-latin-600-normal */
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url(@fontsource/metropolis/files/metropolis-latin-600-normal.woff2)
+    format("woff2");
+}
+
+/* metropolis-latin-700-normal */
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(@fontsource/metropolis/files/metropolis-latin-700-normal.woff2)
+    format("woff2");
+}
+
+/* metropolis-latin-800-normal */
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: url(@fontsource/metropolis/files/metropolis-latin-800-normal.woff2)
+    format("woff2");
+}
+
+/* metropolis-latin-900-normal */
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src: url(@fontsource/metropolis/files/metropolis-latin-900-normal.woff2)
+    format("woff2");
 }

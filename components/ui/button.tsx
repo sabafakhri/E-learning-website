@@ -22,6 +22,10 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         JoinAsATeacher:
           "bg-purple-900 rounded-[5px] text-background dark:text-foreground hover:bg-purple-900/90",
+
+        subscribe:
+          "lg:text-16 bg-purple-900 rounded-[5px] text-background dark:text-foreground lg:rounded-r-[10px] sm:rounded-l-none transition-all duration-300 hover:bg-purple-900/90",
+
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
@@ -29,6 +33,8 @@ const buttonVariants = cva(
         lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
         icon: "size-9",
         JoinAsATeacher: "h-12.5 w-fit px-5",
+        subscribe: "h-12.5 w-full lg:h-15 sm:w-35.5",
+
       },
     },
     defaultVariants: {
