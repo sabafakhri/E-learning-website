@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="mx-auto px-5 py-10 sm:max-w-[943px] lg:max-w-[1278px]">
       <div className="mx-auto gap-10 sm:flex">
-        <section className="flex flex-col gap-6 sm:w-1/5">
+        <section className="flex flex-col gap-6 sm:h-[217px] sm:w-1/5 sm:justify-between">
           <Image
             src="/Eduvi-Logo.svg"
             alt="Next.js Logo"
@@ -41,17 +41,17 @@ const Footer = () => {
           <p className="font-inter sm:text-sm">
             © <span className="font-metropolis">2021 Eduvi.co</span>
           </p>
-          <p className="font-metropolis text-16-26 text-muted-foreground sm:text-14-26">
+          <p className="text-16-26 text-muted-foreground sm:text-14-26">
             Eduvi is a registered <br />
             trademark of Eduvi.co
           </p>
         </section>
         <section className="mt-5 grid grid-cols-2 gap-6 sm:mt-0 sm:w-4/5 sm:grid-cols-4 sm:gap-10">
-          <div className="flex flex-col gap-4">
-            <p className="font-inter text-[22px] font-semibold sm:text-lg">
+          <div className="flex flex-col gap-4 sm:order-2 sm:h-[243px] sm:justify-between">
+            <p className="font-inter text-22-100 font-semibold sm:text-lg">
               Community
             </p>
-            <ul className="font-metropolis text-muted-foreground flex flex-col gap-3">
+            <ul className="text-muted-foreground flex flex-col gap-3">
               <li>Learners</li>
               <li>Parteners</li>
               <li>Developers</li>
@@ -60,11 +60,11 @@ const Footer = () => {
               <li>Teaching Center</li>
             </ul>
           </div>
-          <div className="flex flex-col gap-4">
-            <p className="font-inter text-[22px] font-semibold sm:text-lg">
+          <div className="flex flex-col gap-4 sm:order-1 sm:h-[207px] sm:justify-between">
+            <p className="font-inter text-22-100 font-semibold sm:text-lg">
               Courses
             </p>
-            <ul className="font-metropolis text-muted-foreground flex flex-col gap-3">
+            <ul className="text-muted-foreground flex flex-col gap-3">
               <li>Classroom courses</li>
               <li>Virtual classroom courses</li>
               <li>E-learning courses</li>
@@ -72,11 +72,11 @@ const Footer = () => {
               <li>Offline Courses</li>
             </ul>
           </div>
-          <div className="flex flex-col gap-4">
-            <p className="font-inter text-[22px] font-semibold sm:text-lg">
+          <div className="flex flex-col gap-4 sm:order-3 sm:h-[243px] sm:justify-between">
+            <p className="font-inter text-22-100 font-semibold sm:text-lg">
               Quick links
             </p>
-            <ul className="font-metropolis text-muted-foreground flex flex-col gap-3">
+            <ul className="text-muted-foreground flex flex-col gap-3">
               <li>Home</li>
               <li>Professional Education</li>
               <li>Courses</li>
@@ -85,11 +85,11 @@ const Footer = () => {
               <li>Programs</li>
             </ul>
           </div>
-          <div className="flex flex-col gap-4">
-            <p className="font-inter text-[22px] font-semibold sm:text-lg">
+          <div className="flex flex-col gap-4 sm:order-4 sm:h-[243px] sm:justify-between">
+            <p className="font-inter text-22-100 font-semibold sm:text-lg">
               More
             </p>
-            <ul className="font-metropolis text-muted-foreground flex flex-col gap-3">
+            <ul className="text-muted-foreground flex flex-col gap-3">
               <li>Press</li>
               <li>Investors</li>
               <li>Terms</li>

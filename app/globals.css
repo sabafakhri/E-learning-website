@@ -63,6 +63,9 @@
 
   --text-14-26: 14px;
   --text-14-26--line-height: 26px;
+
+  --text-22-100: 22px;
+  --text-22-100--line-height: 100%;
 }
 
 @theme inline {
