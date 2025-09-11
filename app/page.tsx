@@ -1,11 +1,6 @@
 import JoinAsATeacher from "@/components/JoinAsATeacher";
-import Subscribe from "@/components/Subscribe";
-import Image from "next/image";
+import Classes from "@/components/Classes";
 
 export default function Home() {
-  return (
-    <div>
-      <JoinAsATeacher />
-    </div>
-  );
+  return <Classes />;
 }

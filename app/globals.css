@@ -13,6 +13,10 @@
   --color-purple-400: #efebf5;
   --color-purple-500: #f2e5ff;
   --color-purple-100: #f8f2ff;
+  --color-purple-50: #f7f5fa;
+
+  /* dark */
+  --color-dark: #1a1625;
 
   /* Orange */
   --color-orange-900: #ff6652;
@@ -55,12 +59,14 @@
   --text-14-30: 14px;
   --text-14-30--line-height: 30px;
 
+  --text-14-100: 14px;
+  --text-14-100--line-height: 100%;
+
   --text-14-20: 14px;
   --text-14-20--line-height: 20px;
 
   --text-14-28: 14px;
   --text-14-28--line-height: 28px;
-
 }
 
 @theme inline {
@@ -181,10 +187,11 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    @apply font-metropolis;
+  }
   body {
-
     @apply bg-background text-foreground;
-
   }
 
   Button {
