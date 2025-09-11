@@ -3,9 +3,9 @@ import JoinAsATeacher from "@/components/JoinAsATeacher";
 
 export default function Home() {
   return (
-    <>
-      <JoinAsATeacher />
+    <div className="flex flex-col gap-25">
       <Classes />
-    </>
+      <JoinAsATeacher />
+    </div>
   );
 }
