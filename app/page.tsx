@@ -1,6 +1,11 @@
-import JoinAsATeacher from "@/components/JoinAsATeacher";
 import Classes from "@/components/Classes";
+import JoinAsATeacher from "@/components/JoinAsATeacher";
 
 export default function Home() {
-  return <Classes />;
+  return (
+    <>
+      <JoinAsATeacher />
+      <Classes />
+    </>
+  );
 }

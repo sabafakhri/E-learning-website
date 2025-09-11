@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+body {
+  font-family: "Metropolis", sans-serif;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme {
@@ -187,9 +191,7 @@
   * {
     @apply border-border outline-ring/50;
   }
-  html {
-    @apply font-metropolis;
-  }
+
   body {
     @apply bg-background text-foreground;
   }
