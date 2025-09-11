@@ -3,6 +3,8 @@ import { Inter, Lora, Montserrat, Sour_Gummy } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/Footer";
+import Subscribe from "@/components/Subscribe";
+
 
 const lora = Lora({
   variable: "--font-lora",
@@ -42,8 +44,15 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
-          <Footer />
+
+          <main className="m-auto px-5 sm:max-w-[944px] lg:max-w-[1280px]">
+            {children}
+          </main>
+          <section className="my-12.5 px-5 sm:my-20">
+            <Subscribe />
+          </section>
+        <Footer />
+
         </ThemeProvider>
       </body>
     </html>
