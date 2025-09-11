@@ -22,16 +22,40 @@ export default function Classes() {
           Visit Courses
         </Button>
       </div>
-      <div className="m-auto sm:max-w-216 lg:max-w-265">
-        <div className="bg-[url(/pexels-vanessa-garcia-6325959 1.svg)] mask-[url(/next.svg)]">
-          {/* <Image
-            className="border-7.5 w-full rounded-[20px] border-white"
-            src="/pexels-vanessa-garcia-6325959 1.svg"
+      <div className="relative m-auto my-10 rounded-[20px] border-10 border-white ring-20 ring-inset sm:max-w-216 sm:border-25 lg:max-w-265 lg:border-30">
+        <Image
+          className="rounded-[20px]"
+          src="/pexels-vanessa-garcia-6325959 1.svg"
+          alt="Next.js logo"
+          width={1000}
+          height={570}
+          priority
+        />
+        <Image
+          className="absolute bottom-2 left-1/2 transition-all duration-300 sm:bottom-10 sm:size-12.5 lg:size-15"
+          src="/Call Button.svg"
+          alt="Next.js logo"
+          width={30}
+          height={30}
+          priority
+        />
+        <Image
+          className="absolute right-1/30 bottom-2 transition-all duration-300 sm:bottom-10 sm:size-12.5 lg:size-15"
+          src="/arrow.svg"
+          alt="Next.js logo"
+          width={30}
+          height={30}
+          priority
+        />
+        <div className="absolute bottom-2 left-1/30 h-[62px] w-[52px] rounded-md border-4 border-white ring-10 transition-all duration-300 ring-inset sm:bottom-10 sm:h-[125px] sm:w-[104px] sm:border-8 lg:h-[216px] lg:w-[180px] lg:border-12">
+          <Image
+            className="rounded-md transition-all duration-300 sm:w-[104px] lg:w-[180px]"
+            src="/portrait-little-girl-coloring 1.svg"
             alt="Next.js logo"
-            width={1000}
-            height={570}
+            width={52}
+            height={62}
             priority
-          /> */}
+          />
         </div>
       </div>
       <div className="m-auto grid grid-cols-2 gap-3.75 sm:max-w-216 sm:grid-cols-3 sm:gap-5.5 lg:max-w-265 lg:gap-7.5">
