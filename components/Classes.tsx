@@ -70,7 +70,7 @@ export default function Classes() {
               priority
             />
           </div>
-          <p className="font-metropolis text-sm font-semibold">Audio Classes</p>
+          <p className="text-sm font-semibold">Audio Classes</p>
         </div>
         <div className="bg-background flex items-center gap-2.5 rounded-[5px] p-2.5 sm:p-[20px] lg:p-[15px]">
           <div className="flex size-6 items-center justify-center rounded-sm bg-purple-100 sm:size-11 lg:size-19.25">
@@ -83,7 +83,7 @@ export default function Classes() {
               priority
             />
           </div>
-          <p className="font-metropolis text-sm font-semibold">Live Classes</p>
+          <p className="text-sm font-semibold">Live Classes</p>
         </div>
         <div className="bg-background col-span-full flex items-center gap-2.5 rounded-[5px] p-2.5 max-sm:justify-self-center sm:col-span-1 sm:p-[20px] lg:p-[15px]">
           <div className="flex size-6 items-center justify-center rounded-sm bg-green-100 sm:size-11 lg:size-19.25">
@@ -96,7 +96,7 @@ export default function Classes() {
               priority
             />
           </div>
-          <p className="font-metropolis text-sm font-semibold max-sm:pr-2.5">
+          <p className="text-sm font-semibold max-sm:pr-2.5">
             Recorded Classes
           </p>
         </div>
