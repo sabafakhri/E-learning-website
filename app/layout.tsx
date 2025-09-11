@@ -43,7 +43,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
-          <section className="mx-5">
+          <section className="m-auto max-w-[1280px] rounded-[10px] px-5">
             <Subscribe />
           </section>
         </ThemeProvider>
