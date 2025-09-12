@@ -16,13 +16,14 @@ type PricingPackProps = {
 
 const PricingPack = ({ title, features, price }: PricingPackProps) => {
   return (
-    <Card className="w-[400px] rounded-2xl border border-[var(--color-gray-300)] shadow-sm">
-      <CardHeader className="flex flex-row items-center gap-2">
-        <Tag className="h-5 w-5 text-[var(--color-purple-900)]" />
-        <CardTitle className="text-xl font-bold ">{title}</CardTitle>
-
+    <Card className="w-[400px] h-[600px] rounded-2xl border border-[var(--color-gray-300)] shadow-sm flex flex-col">
+      <CardHeader className="flex flex-row items-center gap-4 py-8 px-6 min-h-[90px]">
+        <Tag className="h-7 w-7 text-[var(--color-purple-900)]" />
+        <CardTitle className="text-2xl font-bold ">{title}</CardTitle>
       </CardHeader>
-      <CardContent className="space-y-3">
+      {/* خط جداکننده */}
+      <div className="w-full h-px" style={{ backgroundColor: 'var(--color-gray-300)' }} />
+      <CardContent className="space-y-3 flex-1 flex flex-col justify-between">
         {features.map((feature, idx) => (
           <div
             key={idx}
@@ -48,7 +49,7 @@ const PricingPack = ({ title, features, price }: PricingPackProps) => {
       <CardFooter>
         <Button
           variant="outline"
-          className="w-full border border-[var(--color-purple-900)] text-[var(--color-purple-900)] hover:bg-[var(--color-purple-900)] hover:text-background hover:shadow-lg hover:border-[var(--color-purple-900)]"
+          className="w-[220px] h-[2.5rem] mx-auto border border-[var(--color-purple-900)] text-[var(--color-purple-900)] hover:bg-[var(--color-purple-900)] hover:text-background hover:shadow-lg hover:border-[var(--color-purple-900)]"
         >
           Purchase Course
         </Button>
@@ -103,7 +104,7 @@ const pricingData = [
   },
 ];
 
-// رندر سه پکیج با مپ
+
 const PricingPackList = () => (
   <div className="
     grid grid-cols-1 gap-2 mt-20 mb-20 
