@@ -16,24 +16,31 @@ type PricingPackProps = {
 
 const PricingPack = ({ title, features, price }: PricingPackProps) => {
   return (
-    <Card className="w-[300px] rounded-2xl border border-[var(--color-gray-300)] shadow-sm">
+    <Card className="w-[400px] rounded-2xl border border-[var(--color-gray-300)] shadow-sm">
       <CardHeader className="flex flex-row items-center gap-2">
         <Tag className="h-5 w-5 text-[var(--color-purple-900)]" />
         <CardTitle className="text-xl font-bold ">{title}</CardTitle>
-      
+
       </CardHeader>
       <CardContent className="space-y-3">
         {features.map((feature, idx) => (
           <div
             key={idx}
-            className={`flex items-center gap-3 ${feature.active ? "" : "text-var(--color-gray-600)"}`}
+            className={`flex items-center gap-3`}
           >
             {feature.active ? (
               <CheckCircle className="text-[var(--color-green-tick)] h-5 w-5" />
             ) : (
               <XCircle className="text-[var(--color-orange-900)] h-5 w-5" />
             )}
-            <span>{feature.label}</span>
+            <span
+              style={{
+                color: feature.active ? 'var(--color-gray-900)' : 'var(--color-gray-600)',
+                fontWeight: feature.active ? 700 : 400,
+              }}
+            >
+              {feature.label}
+            </span>
           </div>
         ))}
         <p className="text-2xl font-bold mt-4">{price}</p>
