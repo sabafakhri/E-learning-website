@@ -18,13 +18,15 @@ interface CardProps {
 
 const CardNumber = ({ title, description, action, icon }: CardProps) => {
   return (
-    <Card className="flex items-center justify-center rounded-[15px]">
-      <CardHeader>
-        <div>{icon}</div>
-        <CardTitle className="text-25-100 font-semibold">{title}</CardTitle>
+    <Card className="flex h-[329px] items-center justify-evenly rounded-[15px] transition-transform duration-300 hover:scale-105">
+      <CardHeader className="flex items-center justify-center">
+        <CardTitle className="text-25-100 flex min-w-[205px] flex-col items-center gap-5 px-0 text-center font-semibold">
+          {icon}
+          {title}
+        </CardTitle>
       </CardHeader>
       <CardContent>
-        <CardDescription className="text-16-30 text-center">
+        <CardDescription className="text-16-30 px-7 text-center">
           {description}
         </CardDescription>
       </CardContent>
