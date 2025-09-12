@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Lora, Montserrat, Sour_Gummy } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import Footer from "@/components/Footer";
 import Subscribe from "@/components/Subscribe";
 
 const lora = Lora({
@@ -45,6 +46,7 @@ export default function RootLayout({
           <main className="px-5">{children}</main>
           <section className="my-12.5 px-5 sm:my-20">
             <Subscribe />
+            <Footer />
           </section>
         </ThemeProvider>
       </body>
