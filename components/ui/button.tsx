@@ -31,6 +31,8 @@ const buttonVariants = cva(
           "border border-purple-900 !text-purple-900 font-medium text-16-20 text-center hover:bg-purple-900 hover:!text-background",
         Lessons:
           "text-14-20 bg-purple-900 rounded-[5px] !text-background !dark:text-foreground hover:bg-purple-900/90",
+        JoinCourses:
+          "p-3.75 text-14-30 text-purple-900 lg:text-16-20 bg-purple-300 rounded-[5px] dark:text-foreground lg:rounded-[10px] transition-all duration-300 hover:bg-purple-300/90 font-normal",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
@@ -43,6 +45,7 @@ const buttonVariants = cva(
         EducationSteps: "h-12.5 w-fit px-5",
         ClassDetails: "h-[44px] w-40.5",
         Lessons: "h-[50px] w-43.5",
+        JoinCourses: "h-11",
       },
     },
     defaultVariants: {
