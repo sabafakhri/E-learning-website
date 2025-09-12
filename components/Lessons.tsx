@@ -172,7 +172,7 @@ const Lessons = () => {
   };
 
   return (
-    <section className="flex flex-col gap-5 sm:max-w-[944px] lg:max-w-[1280px]">
+    <section className="flex flex-col gap-5 sm:mx-auto sm:max-w-[944px] lg:max-w-[1280px]">
       <h2 className="text-28-32 sm:text-35-40 lg:text-45-55 text-center font-bold">
         Qualified lessons for students
       </h2>
