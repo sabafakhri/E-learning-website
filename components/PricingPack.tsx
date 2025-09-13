@@ -1,7 +1,8 @@
 
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, XCircle, Tag } from "lucide-react";
+import { CheckCircle, XCircle } from "lucide-react";
+import Image from "next/image";
 
 type Feature = {
   label: string;
@@ -16,19 +17,17 @@ type PricingPackProps = {
 
 const PricingPack = ({ title, features, price }: PricingPackProps) => {
   return (
-    <Card className="w-[400px] h-[600px] rounded-2xl border border-[var(--color-gray-300)] shadow-sm flex flex-col">
-      <CardHeader className="flex flex-row items-center gap-4 py-8 px-6 min-h-[90px]">
-        <Tag className="h-7 w-7 text-[var(--color-purple-900)]" />
-        <CardTitle className="text-2xl font-bold ">{title}</CardTitle>
+    <Card className="w-[400px] h-[640px] rounded-2xl border border-[var(--color-gray-300)] shadow-sm flex flex-col">
+      <CardHeader className="flex flex-col items-start py-8 px-6 min-h-[90px]">
+        <img src="/price-tag.svg" alt="price tag" className="w-7 h-7" />
+        <CardTitle className="text-2xl font-bold mt-2 self-start">{title}</CardTitle>
       </CardHeader>
-      {/* خط جداکننده */}
-      <div className="w-full h-px" style={{ backgroundColor: 'var(--color-gray-300)' }} />
+
+      <div className="w-full h-px bg-[var(--color-gray-300)]" />
+
       <CardContent className="space-y-3 flex-1 flex flex-col justify-between">
         {features.map((feature, idx) => (
-          <div
-            key={idx}
-            className={`flex items-center gap-3`}
-          >
+          <div key={idx} className="flex items-center gap-3">
             {feature.active ? (
               <CheckCircle className="text-[var(--color-green-tick)] h-5 w-5" />
             ) : (
@@ -36,7 +35,7 @@ const PricingPack = ({ title, features, price }: PricingPackProps) => {
             )}
             <span
               style={{
-                color: feature.active ? 'var(--color-gray-900)' : 'var(--color-gray-600)',
+                color: feature.active ? "var(--color-gray-900)" : "var(--color-gray-600)",
                 fontWeight: feature.active ? 700 : 400,
               }}
             >
@@ -46,6 +45,7 @@ const PricingPack = ({ title, features, price }: PricingPackProps) => {
         ))}
         <p className="text-2xl font-bold mt-4">{price}</p>
       </CardContent>
+
       <CardFooter>
         <Button
           variant="outline"
@@ -57,7 +57,6 @@ const PricingPack = ({ title, features, price }: PricingPackProps) => {
     </Card>
   );
 };
-
 
 const pricingData = [
   {
@@ -104,18 +103,42 @@ const pricingData = [
   },
 ];
 
-
 const PricingPackList = () => (
-  <div className="
-    grid grid-cols-1 gap-2 mt-20 mb-20 
-    sm:grid-cols-2 
-    lg:grid-cols-3 
-    place-items-center
-  ">
-    {pricingData.map((pack, idx) => (
-      <PricingPack key={idx} {...pack} />
-    ))}
-  </div>
+  <section className="flex flex-col items-center justify-center text-center mt-10">
+    <h2 className="block md:hidden text-3xl font-extrabold text-[var(--color-gray-900)] max-w-2xl">
+      We create a monthly pricing package for all standard students
+    </h2>
+
+    <p className="block md:hidden text-lg mt-4 text-[var(--color-gray-600)] max-w-xl">
+      Basically we create this package for those who are really interested and get
+      benifited from our courses or books.
+    </p>
+
+
+    <h2 className="hidden md:block text-3xl md:text-4xl font-extrabold text-[var(--color-gray-900)] max-w-4xl mx-auto text-center">
+      We create a monthly pricing package for all standard students
+    </h2>
+
+    <p className="hidden md:block text-lg md:text-xl mt-4 text-[var(--color-gray-600)] max-w-3xl mx-auto text-center">
+      Basically we create this package for those who are really interested and get
+      benifited from our courses or books. We want to make a low cost package for
+      them. So that they can purchase any courses with the package they buy from us.
+      Also will get free books from every packages.
+    </p>
+
+    <div
+      className="
+        grid grid-cols-1 gap-6 mt-16 mb-20
+        sm:grid-cols-2
+        lg:grid-cols-3
+        place-items-center
+      "
+    >
+      {pricingData.map((pack, idx) => (
+        <PricingPack key={idx} {...pack} />
+      ))}
+    </div>
+  </section>
 );
 
 export default PricingPackList;
