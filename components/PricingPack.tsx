@@ -35,7 +35,7 @@ const PricingPack = ({ title, features, price }: PricingPackProps) => {
             )}
             <span
               style={{
-                color: feature.active ? "var(--color-gray-900)" : "var(--color-gray-600)",
+                color: feature.active ? "var(--color-foreground)" : "var(--color-gray-600)",
                 fontWeight: feature.active ? 700 : 400,
               }}
             >
@@ -49,7 +49,7 @@ const PricingPack = ({ title, features, price }: PricingPackProps) => {
       <CardFooter>
         <Button
           variant="outline"
-          className="w-[220px] h-[2.5rem] mx-auto border border-[var(--color-purple-900)] text-[var(--color-purple-900)] hover:bg-[var(--color-purple-900)] hover:text-background hover:shadow-lg hover:border-[var(--color-purple-900)]"
+          className="w-[220px] h-[2.5rem] mx-auto border border-[var(--color-purple-900)] text-[var(--color-purple-900)] hover:bg-[var(--color-purple-900)] hover:text-white hover:shadow-lg hover:border-[var(--color-purple-900)]"
         >
           Purchase Course
         </Button>
@@ -105,7 +105,7 @@ const pricingData = [
 
 const PricingPackList = () => (
   <section className="flex flex-col items-center justify-center text-center mt-10">
-    <h2 className="block md:hidden text-3xl font-extrabold text-[var(--color-gray-900)] max-w-2xl">
+    <h2 className="block md:hidden text-3xl font-extrabold  max-w-2xl">
       We create a monthly pricing package for all standard students
     </h2>
 
@@ -115,7 +115,7 @@ const PricingPackList = () => (
     </p>
 
 
-    <h2 className="hidden md:block text-3xl md:text-4xl font-extrabold text-[var(--color-gray-900)] max-w-4xl mx-auto text-center">
+    <h2 className="hidden md:block text-3xl md:text-4xl font-extrabold  max-w-4xl mx-auto text-center">
       We create a monthly pricing package for all standard students
     </h2>
 
